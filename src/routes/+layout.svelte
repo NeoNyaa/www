@@ -1,8 +1,9 @@
 <script lang="ts">
 	import favicon from '$lib/assets/img/favicon.svg';
-	import '$lib/assets/style/global/var.css';
-	import '$lib/assets/style/global/nav.css';
-	import '$lib/assets/style/global/txt.css';
+	import '$lib/assets/style/global/general.css';
+	import '$lib/assets/style/global/variables.css';
+	import '$lib/assets/style/global/navbar.css';
+	import '$lib/assets/style/global/text.css';
 	let { children } = $props();
 </script>
 
