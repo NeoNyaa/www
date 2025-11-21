@@ -1,2 +1,2 @@
-<h1>Welcome to Heartsplosion</h1>
-<a href="links">Links</a>
+<h1>neo-nyaa.pet</h1>
+<a href="/links">Links</a>

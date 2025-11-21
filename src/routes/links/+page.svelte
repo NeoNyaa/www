@@ -1,2 +1,2 @@
-<h1>Welcome to Heartsplosion</h1>
+<h1>Links</h1>
 <a href="/">home</a>

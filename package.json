@@ -1,5 +1,5 @@
 {
-	"name": "web",
+	"name": "www",
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
@@ -35,5 +35,8 @@
 		"typescript-eslint": "^8.46.1",
 		"vite": "^7.1.10",
 		"wrangler": "^4.50.0"
+	},
+	"dependencies": {
+		"normalize.css": "^8.0.1"
 	}
 }
