@@ -21,10 +21,6 @@ h5 {font-size: 1.250rem;}
 small {font-size: 0.800rem;}
 
 a {
-  color: var(--accent-500);
-  text-decoration: none;
-}
-
-a:visited {
   color: var(--accent-700);
+  text-decoration: none;
 }
