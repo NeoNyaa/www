@@ -2,7 +2,7 @@
 	import favicon from '$lib/assets/img/favicon.svg';
 	import '$lib/assets/style/global/general.css';
 	import '$lib/assets/style/global/variables.css';
-	import '$lib/assets/style/global/navbar.css';
+	import '$lib/assets/style/global/nav-bar.css';
 	import '$lib/assets/style/global/text.css';
 	let { children } = $props();
 </script>
