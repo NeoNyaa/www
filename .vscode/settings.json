@@ -1,5 +1,8 @@
 {
 	"files.associations": {
 		"*.css": "tailwind"
-	}
+	},
+	"files.autoSave": "afterDelay",
+	"editor.formatOnSave": true,
+	"editor.formatOnSaveMode": "file"
 }
