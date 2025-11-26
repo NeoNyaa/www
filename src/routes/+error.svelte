@@ -2,7 +2,9 @@
 	import { page } from '$app/state';
 </script>
 
-<div class="hero min-h-screen bg-base-200">
+<div
+	class="hero bg-base-100"
+	style="height: calc(100vh - 4rem - 1px);">
 	<div class="hero-content">
 		<div class="max-w-md text-center">
 			<h1 class="text-5xl font-bold">Oh Nyoo &gt.&lt</h1>

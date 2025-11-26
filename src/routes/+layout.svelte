@@ -13,7 +13,9 @@
 </svelte:head>
 
 <!-- Navbar -->
-<div class="navbar sticky top-0 bg-base-200 shadow-sm">
+<div
+	id="navbar"
+	class="navbar sticky top-0 bg-base-200 shadow-sm">
 	<div class="flex-none">
 		<a href="/"
 			><img
