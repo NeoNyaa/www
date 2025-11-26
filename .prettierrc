@@ -12,5 +12,7 @@
 			}
 		}
 	],
-	"tailwindStylesheet": "src/routes/layout.css"
+	"tailwindStylesheet": "src/routes/layout.css",
+	"bracketSameLine": true,
+	"singleAttributePerLine": true
 }
