@@ -16,7 +16,7 @@
 			</p>
 			<a
 				href="/"
-				class="btn btn-primary">Go back home?</a>
+				class="btn btn-primary p-4">Go back home?</a>
 		</div>
 	</div>
 </div>

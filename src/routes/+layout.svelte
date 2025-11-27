@@ -3,7 +3,7 @@
 	import favicon from '$lib/assets/img/favicon.svg';
 
 	let { children } = $props();
-	const underDev = true;
+	const inDev = true;
 </script>
 
 <svelte:head>
@@ -15,7 +15,7 @@
 <!-- Navbar -->
 <div
 	id="navbar"
-	class="navbar sticky top-0 bg-base-200 shadow-sm">
+	class="navbar sticky top-0 z-1 bg-base-200 shadow-sm">
 	<div class="flex-none">
 		<a href="/"
 			><img
@@ -30,14 +30,14 @@
 				<details>
 					<summary>Utils</summary>
 					<ul class="w-max rounded-t-none bg-base-200 p-2">
-						<li><a href=".">Optimal Superpairs Meter</a></li>
+						<li><a href="/Utils/Optimal-Superpairs-Meter">Optimal Superpairs Meter</a></li>
 					</ul>
 				</details>
 			</li>
 		</ul>
 	</div>
 	<!-- Under Development Notice -->
-	{#if underDev}
+	{#if inDev}
 		<div
 			role="alert"
 			class="mr-4 alert w-max py-2 alert-error dark:alert-soft">

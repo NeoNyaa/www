@@ -2,6 +2,10 @@
 @import '@fontsource-variable/nunito/wght.css';
 @import '@fontsource-variable/jetbrains-mono/wght.css';
 
+:root {
+	--globalRadius: 0.5rem;
+}
+
 /* Import Tailwind */
 @import 'tailwindcss';
 
@@ -9,59 +13,79 @@
 @plugin 'daisyui' {
 	logs: false;
 	themes:
-		valentine --default,
-		NeoForest --preferes-dark;
+		NeoLight --default,
+		NeoForest --prefersdark;
 	/* include: 'navbar, alert, menu, rootcolor, reset, properties, rootscrollgutter, rootscrolllock, scrollbar, svg'; */
 }
 
-/* Overwrite rounding on DaisyUI theme */
 @plugin 'daisyui/theme' {
-	name: 'valentine';
+	name: 'NeoLight';
 	default: true;
-	--radius-selector: 0.5rem;
-	--radius-field: 0.5rem;
-	--radius-box: 0.5rem;
-	--size-selector: 0.25rem;
-	--size-field: 0.25rem;
+	prefersdark: false;
+	color-scheme: 'light';
+	--color-base-100: oklch(97% 0 0);
+	--color-base-200: oklch(98% 0 0);
+	--color-base-300: oklch(92% 0 0);
+	--color-base-content: oklch(0% 0 0);
+	--color-primary: oklch(71% 0.202 349.761);
+	--color-primary-content: oklch(0% 0 0);
+	--color-secondary: oklch(65% 0.241 354.308);
+	--color-secondary-content: oklch(13.955% 0.027 168.327);
+	--color-accent: oklch(66% 0.295 322.15);
+	--color-accent-content: oklch(14.125% 0.023 185.713);
+	--color-neutral: oklch(28% 0.109 3.907);
+	--color-neutral-content: oklch(86.139% 0.007 171.364);
+	--color-info: oklch(72.06% 0.191 231.6);
+	--color-info-content: oklch(0% 0 0);
+	--color-success: oklch(64.8% 0.15 160);
+	--color-success-content: oklch(0% 0 0);
+	--color-warning: oklch(84.71% 0.199 83.87);
+	--color-warning-content: oklch(0% 0 0);
+	--color-error: oklch(71.76% 0.221 22.18);
+	--color-error-content: oklch(0% 0 0);
+	--radius-selector: calc(var(--globalRadius) / 2);
+	--radius-field: calc(var(--globalRadius) / 2);
+	--radius-box: calc(var(--globalRadius) / 2);
+	--size-selector: calc(var(--globalRadius) / 4);
+	--size-field: calc(var(--globalRadius) / 4);
 	--border: 1px;
 	--depth: 0;
-	--noise: 0;
+	--noise: 1;
 }
 
-/* Custom dark theme */
 @plugin 'daisyui/theme' {
-	name: 'NeoForest';
+	name: 'NeoDark';
 	default: false;
 	prefersdark: true;
 	color-scheme: 'dark';
 	--color-base-100: oklch(20% 0 0);
 	--color-base-200: oklch(14% 0 0);
 	--color-base-300: oklch(26% 0 0);
-	--color-base-content: oklch(83.768% 0.001 17.911);
-	--color-primary: oklch(82% 0.12 346.018);
+	--color-base-content: oklch(100% 0 0);
+	--color-primary: oklch(71% 0.202 349.761);
 	--color-primary-content: oklch(0% 0 0);
-	--color-secondary: oklch(71% 0.202 349.761);
+	--color-secondary: oklch(65% 0.241 354.308);
 	--color-secondary-content: oklch(13.955% 0.027 168.327);
-	--color-accent: oklch(65% 0.241 354.308);
+	--color-accent: oklch(66% 0.295 322.15);
 	--color-accent-content: oklch(14.125% 0.023 185.713);
 	--color-neutral: oklch(28% 0.109 3.907);
 	--color-neutral-content: oklch(86.139% 0.007 171.364);
-	--color-info: oklch(74% 0.16 232.661);
+	--color-info: oklch(72.06% 0.191 231.6);
 	--color-info-content: oklch(0% 0 0);
-	--color-success: oklch(76% 0.177 163.223);
+	--color-success: oklch(64.8% 0.15 160);
 	--color-success-content: oklch(0% 0 0);
-	--color-warning: oklch(85% 0.199 91.936);
+	--color-warning: oklch(84.71% 0.199 83.87);
 	--color-warning-content: oklch(0% 0 0);
-	--color-error: oklch(70% 0.191 22.216);
+	--color-error: oklch(71.76% 0.221 22.18);
 	--color-error-content: oklch(0% 0 0);
-	--radius-selector: 0.5rem;
-	--radius-field: 0.5rem;
-	--radius-box: 0.5rem;
-	--size-selector: 0.25rem;
-	--size-field: 0.25rem;
+	--radius-selector: calc(var(--globalRadius) / 2);
+	--radius-field: calc(var(--globalRadius) / 2);
+	--radius-box: calc(var(--globalRadius) / 2);
+	--size-selector: calc(var(--globalRadius) / 4);
+	--size-field: calc(var(--globalRadius) / 4);
 	--border: 1px;
 	--depth: 0;
-	--noise: 0;
+	--noise: 1;
 }
 
 /* Configure default fonts */

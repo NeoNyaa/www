@@ -1,0 +1,42 @@
+export const PRETTY_NAMES: Record<string, string> = {
+	ENCHANTMENT_CRITICAL_7: 'Critical VII',
+	ENCHANTMENT_LOOTING_5: 'Looting V',
+	ENCHANTMENT_FIRST_STRIKE_5: 'First Strike V',
+	ENCHANTMENT_PROSECUTE_6: 'Prosecute VI',
+	ENCHANTMENT_SHARPNESS_7: 'Sharpness VII',
+	ENCHANTMENT_SNIPE_4: 'Snipe IV',
+	ENCHANTMENT_POWER_7: 'Power VII',
+	ENCHANTMENT_GIANT_KILLER_7: 'Giant Killer VII',
+	ENCHANTMENT_CUBISM_6: 'Cubism VI',
+	ENDSTONE_IDOL: 'Endstone Idol',
+	ENCHANTMENT_GROWTH_7: 'Growth VII',
+	ENCHANTMENT_PROTECTION_7: 'Protection VII',
+	GOLDEN_BOUNTY: 'Golden Bounty',
+	ENCHANTMENT_TRIPLE_STRIKE_5: 'Triple-Strike V',
+	ENCHANTMENT_SYPHON_5: 'Drain V',
+	ENCHANTMENT_EXECUTE_6: 'Execute VI',
+	ENCHANTMENT_TITAN_KILLER_7: 'Titan Killer VII',
+	ENCHANTMENT_CLEAVE_6: 'Cleave VI',
+	ENCHANTMENT_LUCK_7: 'Luck VII',
+	SEVERED_HAND: 'Severed Hand',
+	GOLD_BOTTLE_CAP: 'Gold Bottle Cap',
+	ENSNARED_SNAIL: 'Ensnared Snail',
+	ENCHANTMENT_CHANCE_5: 'Chance V',
+	ENCHANTMENT_LIFE_STEAL_5: 'Life Steal V',
+	PESTHUNTING_GUIDE: "A Beginner's Guide to Pesthunting",
+	TROUBLED_BUBBLE: 'Troubled Bubble',
+	ENCHANTMENT_THUNDERLORD_7: 'Thunderlord VII',
+	OCTOPUS_TENDRIL: 'Octopus Tendril',
+	ENCHANTMENT_THUNDERBOLT_7: 'Thunderbolt VII',
+	ENCHANTMENT_FIRE_PROTECTION_7: 'Fire Protection VII',
+	ENCHANTMENT_BLAST_PROTECTION_7: 'Blast Protection VII',
+	ENCHANTMENT_PROJECTILE_PROTECTION_7: 'Projectile Protection VII',
+	SEVERED_PINCER: 'Severed Pincer',
+	CHAIN_END_TIMES: 'Chain of the End Times',
+	ENCHANTMENT_VENOMOUS_6: 'Venomous VI',
+	ENCHANTMENT_BANE_OF_ARTHROPODS_7: 'Bane of Arthropods VII'
+};
+
+export function hasPrettyName(id: string) {
+	return id in PRETTY_NAMES;
+}

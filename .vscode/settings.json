@@ -1,6 +1,6 @@
 {
 	"files.associations": {
-		"*.css": "tailwind"
+		"*.css": "tailwindcss"
 	},
 	"files.autoSave": "afterDelay",
 	"editor.formatOnSave": true,
