@@ -34,7 +34,8 @@ export const PRETTY_NAMES: Record<string, string> = {
 	SEVERED_PINCER: 'Severed Pincer',
 	CHAIN_END_TIMES: 'Chain of the End Times',
 	ENCHANTMENT_VENOMOUS_6: 'Venomous VI',
-	ENCHANTMENT_BANE_OF_ARTHROPODS_7: 'Bane of Arthropods VII'
+	ENCHANTMENT_BANE_OF_ARTHROPODS_7: 'Bane of Arthropods VII',
+	FATEFUL_STINGER: 'Fateful Stinger'
 };
 
 export function hasPrettyName(id: string) {
