@@ -1,9 +1,12 @@
 /* Import fonts */
-@import '@fontsource-variable/nunito/wght.css';
+@import '@fontsource-variable/inter/wght.css';
 @import '@fontsource-variable/jetbrains-mono/wght.css';
 
 :root {
-	--globalRadius: 0.5rem;
+	--daisyGlobalRadius: 0.5rem;
+	--daisyGlobalBorder: 1px;
+	--daisyGlobalDepth: 0;
+	--daisyGlobalNoise: 0;
 }
 
 /* Import Tailwind */
@@ -23,9 +26,9 @@
 	default: true;
 	prefersdark: false;
 	color-scheme: 'light';
-	--color-base-100: oklch(97% 0 0);
-	--color-base-200: oklch(98% 0 0);
-	--color-base-300: oklch(92% 0 0);
+	--color-base-100: oklch(100% 0 0);
+	--color-base-200: oklch(95% 0 0);
+	--color-base-300: oklch(90% 0 0);
 	--color-base-content: oklch(0% 0 0);
 	--color-primary: oklch(71% 0.202 349.761);
 	--color-primary-content: oklch(0% 0 0);
@@ -43,14 +46,14 @@
 	--color-warning-content: oklch(0% 0 0);
 	--color-error: oklch(71.76% 0.221 22.18);
 	--color-error-content: oklch(0% 0 0);
-	--radius-selector: calc(var(--globalRadius) / 2);
-	--radius-field: calc(var(--globalRadius) / 2);
-	--radius-box: calc(var(--globalRadius) / 2);
-	--size-selector: calc(var(--globalRadius) / 4);
-	--size-field: calc(var(--globalRadius) / 4);
-	--border: 1px;
-	--depth: 0;
-	--noise: 1;
+	--radius-selector: calc(var(--daisyGlobalRadius) / 2);
+	--radius-field: calc(var(--daisyGlobalRadius) / 2);
+	--radius-box: calc(var(--daisyGlobalRadius) / 2);
+	--size-selector: calc(var(--daisyGlobalRadius) / 4);
+	--size-field: calc(var(--daisyGlobalRadius) / 4);
+	--border: var(--daisyGlobalBorder);
+	--depth: var(--daisyGlobalDepth);
+	--noise: var(--daisyGlobalNoise);
 }
 
 @plugin 'daisyui/theme' {
@@ -59,8 +62,8 @@
 	prefersdark: true;
 	color-scheme: 'dark';
 	--color-base-100: oklch(20% 0 0);
-	--color-base-200: oklch(14% 0 0);
-	--color-base-300: oklch(26% 0 0);
+	--color-base-200: oklch(15% 0 0);
+	--color-base-300: oklch(25% 0 0);
 	--color-base-content: oklch(100% 0 0);
 	--color-primary: oklch(71% 0.202 349.761);
 	--color-primary-content: oklch(0% 0 0);
@@ -78,18 +81,18 @@
 	--color-warning-content: oklch(0% 0 0);
 	--color-error: oklch(71.76% 0.221 22.18);
 	--color-error-content: oklch(0% 0 0);
-	--radius-selector: calc(var(--globalRadius) / 2);
-	--radius-field: calc(var(--globalRadius) / 2);
-	--radius-box: calc(var(--globalRadius) / 2);
-	--size-selector: calc(var(--globalRadius) / 4);
-	--size-field: calc(var(--globalRadius) / 4);
-	--border: 1px;
-	--depth: 0;
-	--noise: 1;
+	--radius-selector: calc(var(--daisyGlobalRadius) / 2);
+	--radius-field: calc(var(--daisyGlobalRadius) / 2);
+	--radius-box: calc(var(--daisyGlobalRadius) / 2);
+	--size-selector: calc(var(--daisyGlobalRadius) / 4);
+	--size-field: calc(var(--daisyGlobalRadius) / 4);
+	--border: var(--daisyGlobalBorder);
+	--depth: var(--daisyGlobalDepth);
+	--noise: var(--daisyGlobalNoise);
 }
 
 /* Configure default fonts */
 @theme {
-	--font-sans: 'Nunito Variable', sans-serif;
+	--font-sans: 'Inter Variable', sans-serif;
 	--font-mono: 'JetBrains Mono Variable', monospace;
 }

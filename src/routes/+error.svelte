@@ -7,7 +7,7 @@
 	style="height: calc(100vh - 4rem - 1px);">
 	<div class="hero-content">
 		<div class="max-w-md text-center">
-			<h1 class="text-5xl font-bold">Oh Nyoo &gt.&lt</h1>
+			<h1 class="text-5xl font-bold font-mono">Oh Nyoo &gt.&lt</h1>
 			<p class="py-6">
 				<b>Error Code:</b>
 				{page.status}<br />
